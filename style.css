@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bs-dark-color: #1a1d20;
+    --bs-dark-primary: #6E6E6E;
+    --bs-main-color: #fff;
+    --bs-primary-color: #c6c6c6;
+    --secondary-color: #1D435D;
+    --bs-supporting-color: #FF7D00;
+    --bs-nav-color: rgba(0, 0, 0, 0.34);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--bs-dark-primary);
+}
+
+
+.navbar {
+    height: 10vh;
+    /* background: var(--bs-nav-color); */
+    margin-bottom: -10vh;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.4px);
+    -webkit-backdrop-filter: blur(6.4px);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+
+}
+
+.nav-link {
+    color: var(--bs-main-color);
+}
+
+.nav-link:hover {
+    color: var(--bs-supporting-color);
+}
+
+.heroSection {
+    height: 80vh;
+
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.551), rgb(0, 0, 0)),
+        url('image/vintage-2168174_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.heroSection .container {
+    display: grid;
+    place-content: center;
+    height: inherit;
+
+}
+
+.hero-section-details {
+    width: 60%;
+}
+
+.myName {
+    font-size: 24px;
+    color: var(--bs-supporting-color);
+}
+
+.calculatorSection {
+    height: 40vh;
+    /* From https://css.glass */
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.551), rgb(0, 0, 0)),
+        url('image/vintage-2168174_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+hr {
+    width: 70px;
+    border-top: 7px solid;
+
+}
+
+
+
+.calculatorSection .container {
+    display: grid;
+    place-content: center;
+    height: inherit;
+    background: rgba(0, 0, 0, 0.39);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(26, 24, 24, 0.421);
+}
+
+
+.ToastMessage {
+    color: var(--bs-supporting-color);
+}
+
+
+.btn-boader {
+
+    border: 1px solid var(--bs-supporting-color);
+}
+
+.btn-boader:hover {
+    color: white;
+    background: var(--bs-supporting-color);
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid var(--bs-supporting-color);
+}
+
+
+.card-body a {
+    background: var(--bs-main-color);
+}
+
+.contact {
+    width: 50%;
+}
+
+.navbar-toggler-icon {
+    background-image: url(image/menu.png);
+}
+
+.navbar-toggler {
+
+    color: var(--bs-supporting-color);
+
+}
+
+.link {
+    color: var(--bs-supporting-color);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .navbar {
+        height: 12vh;
+        margin-bottom: -12vh;
+
+    }
+
+    .hero-section-details {
+        padding-top: 10%;
+        width: 90%;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url(image/menu.png);
+    }
+
+    .navbar-toggler {
+
+        color: var(--bs-supporting-color);
+
+    }
+
+    div#navbarNav {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 100%;
+        padding-left: 20px;
+
+
+        background: rgba(28, 27, 27, 0.84);
+        border-radius: 0px 0px 16px 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.8px);
+        -webkit-backdrop-filter: blur(7.8px);
+        border: 1px solid rgba(28, 27, 27, 0.2);
+    }
+
+    .contact {
+        width: 90%;
+    }
+
+    .Developer {
+        text-align: end;
+    }
+}
